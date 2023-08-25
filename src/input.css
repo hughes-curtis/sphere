@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#backgroundVideo {
+    z-index: -1
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+} */
+
+@keyframes example {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.3;}
+    50%  {background-color: green;}
+    100% {opacity: 1;}
+}
+@keyframes ai-animation {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: rgb(137, 13, 233);}
+    100% {color: red;}
+}
+  
+  /* The element to apply the animation to */
+  #homeText {
+    border: none;
+    border-radius: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+  }
+
+  #ai {
+    animation-name: ai-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+
+  #contact {
+    background-color: white;
+    padding: 100px 0;
+  }
+  
+  .contact {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    font-size: 18px;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    /* font-size: 16px; */
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: darkgreen;
+  }
+
+  .back {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+  }
+
+  .front {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  @media(prefers-reduced-motion) {
+    .back{
+      transition: none;
+    }
+  }
+
+  /* .logo:nth-child() {
+
+  } */
+
+  .logo {
+    transition-delay: 400ms;
+  }
+

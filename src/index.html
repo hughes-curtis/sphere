@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d8d1bb995.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="index" class="h-screen">
+        <video autoplay muted loop class="top-0 fixed" id="backgroundVideo" poster="assets/images/loader.png">
+            <source src="assets/videos/homefive.mp4" type="video/mp4">
+        </video>
+
+        <div id="navbar" class="top-0 text-white flex items-center justify-between mx-5 mt-5">
+            <div class="flex flex-col items-center">
+                <p class="text-3xl font-extrabold">SpherePulse</p>
+                <p class="text-sm italic text-orange-200">English and Beyond</p>
+            </div>
+            <div class="flex justify-between w-1/2">
+                <a href="#stats" class="hover:text-green-600 duration-300">Services</a>
+                <a href="#services" class="hover:text-green-600 duration-300">Our Work</a>
+                <a href="#about" class="hover:text-green-600 duration-300">About Us</a>
+                <a href="#contact" class="hover:text-green-600 duration-300">Contact Us</a>
+            </div>    
+        </div>
+        <div class="w-1/2 h-full flex items-center">
+            <div id="homeText" class="text-white pl-5 py-3">
+                <p class="text-4xl mb-3">Empower Your <span id="ai" class="text-red-700 font-extrabold">AI</span> with Precision</p>
+                <p class="text-base w-3/4">Unlock Global Potential - Embracing Languages for a Truly Interconnected Globe.</p>      
+            </div>
+        </div>
+    </div>
+    
+    <div id="about" class="bg-white text-slate-800 py-20 px-5">
+        <div class="flex">
+            <div class="w-1/2 pt-5 pr-5 flex flex-col justify-center">
+                <p class="mb-10 text-xl">
+                    Welcome to SpherePulse, your dedicated partner in enhancing AI advancements.
+                </p>
+                <p class="text-xl"> 
+                    With a passion for precision and commitment to excellence, we offer a range of specialized services to enrich your AI models across languages and cultures.
+                </p>
+            </div>
+            <div class="w-1/2">
+                <img src="assets/images/four.jpg" alt="" class="rounded-3xl">
+            </div>
+        </div>
+        <div class="flex pt-20">
+            <div class="w-1/2 mr-5">
+                <img src="assets/images/teamwork.jpg" alt="" class="rounded-3xl">
+            </div>
+            <div class="w-1/2 flex flex-col justify-center">
+                <p class="mb-10 text-xl">
+                    With our dedicated team of professionals, we ensure accurate and culturally nuanced results that propel AI capabilities to new heights.
+                </p>
+                <p class="text-xl"> 
+                    Our goal is to enhance AI recognition across more than just the English language. A community of proficient individuals spanning over 20 languages, each possessing native-level skills in their respective domains.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="services" class="text-slate-800 bg-white pt-10 pb-28 px-5">
+        <h1 class="text-center text-4xl text-bold pb-24">Our Services</h1>
+        <div class="flex mb-16">
+            <div class="w-full">
+                <img src="assets/images/kid.jpg" alt="" class="back w-full rounded-tr-full rounded-bl-full">
+                <p class="mt-5 mb-2 text-2xl">Annotation</p>
+                <p>Leverage our expert annotation services to refine your AI algorithms. We provide accurate labeling for training data, ensuring your models perform at their best.</p>
+            </div>
+            <div class="pl-10 w-full">
+                <p class="mb-2 text-2xl">Transcription</p>
+                <p class="mb-5">Capture the essence of spoken content with our transcription solutions. Our trained professionals accurately transcribe audio and video data for seamless integration into your projects.</p>
+                <img src="assets/images/headphones.jpg" alt="" class="back rounded-tl-full rounded-br-full">
+            </div>
+        </div>
+        <div class="flex pt-5">
+            <img src="assets/images/diversity.jpg" alt="" class="back w-1/2 rounded-tl-full rounded-br-full">
+            <div class="pl-7">
+                <p class="mb-2 text-2xl">Multilingual Translation</p>
+                <p class="mb-5">Expand your AI's reach with our multilingual translation services. We bridge language gaps by providing accurate translations to foster cross-cultural connections.</p>
+                <p class="mb-5">Boasting the biggest team of multilinguals.</p>
+            </div>
+        </div>
+
+        <div class="back mt-28 flex justify-between w-full">
+            <div class="py-3 mr-3 px-5 w-1/2 bg-gradient-to-br from-slate-600 to-slate-900 text-white rounded-lg">
+                <div class="flex flex-col items-center pb-2 text-2xl">
+                    <i class="fa-solid fa-registered pb-1"></i>
+                    <p class="">Grading</p>
+                </div>
+                
+                <p class="mb-3">Recognize the intention of users and evaluate the output produced by digital assistants.</p>
+                <p class="">Examine the realm of user interaction and the technological proficiencies inherent in chatbots. Strive to remain at the forefront of dispensing a remarkable and favorable user experience, thereby ensuring a proactive approach in achieving excellence.</p>
+                
+            </div>
+            <div class="py-3 ml-3 px-5 w-1/2 bg-gradient-to-b from-orange-900 to-orange-600 text-white rounded-lg">
+                <div class="flex flex-col items-center pb-2 text-2xl">
+                    <i class="fa-solid fa-umbrella pb-1"></i>
+                    <p>Data Collection</p>
+                </div>
+    
+                <p class="mb-3">Accumulate extensive quantities of data, spanning a wide spectrum of multimedia forms including photographs, videos, and audio recordings.</p>
+                <p class="pb-10">We can subsequently annotate, transcribe, or translate these with remarkable precision.</p>
+            </div>
+        </div>
+        <div class="back mt-16 flex justify-between w-full">
+            <div class="py-3 mr-3 px-5 w-1/2 bg-gradient-to-r from-green-900 to-green-600 text-white rounded-lg">
+                <div class="flex flex-col items-center pb-2 text-2xl">
+                    <i class="fa-solid fa-compact-disc pb-1"></i>
+                    <p>Corpus Creation</p>
+                </div>
+                
+                <p class="mb-3">Valuable experience in corpus creation.</p>
+                <p class="mb-3">Skillfully curating and compiling comprehensive collections of texts or data, which serve as essential references for various language processing tasks.</p>
+                <p class="pb-10">Through meticulous attention to detail and a keen understanding of linguistic nuances, we’ve contributed to the development of high-quality corpora that facilitate the advancement of language technologies and natural language understanding.</p>
+            </div>
+            <div class="py-3 ml-3 px-5 w-1/2 bg-slate-700 text-white rounded-lg">
+                <div class="flex flex-col items-center pb-2 text-2xl">
+                    <i class="fa-solid fa-headset pb-1"></i>
+                    <p>Bot Response</p>
+                </div>
+               
+                <p class=" mb-3">Data to help models develop an understanding of human language patterns, context, and nuances.</p>
+                <p class="">This intricate training process empowers message bot AIs to provide helpful, contextually accurate, and coherent responses across a wide array of user queries and prompts spanning finance, legal, health, creative writing, STEM, and coding domains.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="stats" class="text-white pt-10 pl-5 pr-10 pb-10 flex h-screen">
+        <div class="w-1/2 my-auto text-4xl pr-10">
+            Fluency in nearly 20 languages for true global AI potential.
+        </div>
+        <div class="w-1/2 my-auto pr-20">
+            <div class="flex justify-between mb-20">
+                <div>
+                    <p class="text-8xl">50+</p>
+                    <p class="text-2xl">Trust Us</p>
+                </div>  
+                <div>
+                    <p class="text-8xl">20</p>
+                    <p class="text-2xl">Countries</p>
+                </div>  
+            </div>
+            <div class="flex justify-between ">
+                <div>
+                    <p class="text-8xl">10</p>
+                    <p class="text-2xl">Years</p>
+                </div>
+                <div>
+                    <p class="text-8xl">20</p>
+                    <p class="text-2xl">Languages</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <section id="contact">
+        <div class="contact">
+          <h2>Get in Touch</h2>
+          <p>Ready to Elevate Your AI? Reach Out to Us.</p>
+          <form action="" id="contact-form" class="contact-form">
+            
+            <!-- <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="focus:outline-none focus:ring-2 appearance-none text-sm"> -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required class="focus:outline-none focus:ring-2 appearance-none text-sm">
+            
+            <!-- <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="optional" class="focus:outline-none focus:ring-2 appearance-none text-sm">
+             -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required class="focus:outline-none focus:ring-2 appearance-none text-sm"></textarea>
+            
+            <button id="contact-button" type="submit" class="flex bg-gradient-to-r from-green-500 to-green-900 text-white w-full py-2 rounded-md items-center justify-center">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="text-white px-5 pt-14 pb-8 text-sm">
+        <div class="flex justify-around mb-5">
+            <div class="w-1/4 flex flex-col justify-center items-center">
+                <p class="text-lg mb-3">ABOUT</p>
+                <p class="mb-5">Are you passionate about the world of languages? Join Us Today!</p>
+                <a href="" class="bg-gradient-to-r from-orange-500 to-orange-900 hover:from-orange-900 hover:to-orange-500 py-2 px-4 rounded-lg font-bold">Sign Up<i class="fa-solid fa-arrow-right ml-3"></i></a>
+            </div>
+            <div class="border-l-2 border-white">
+                <p class=""></p>
+            </div>
+            <div>
+                <p class="text-lg mb-3">Contact Us</p>
+                <p class="mb-1">Email: contact@spherepulse.com</p>
+                <p class="mb-1">Phone: +1 (234) 678-908</p>
+                <p class="mb-1"><i class="fa-brands fa-x-twitter mr-2"></i>@sphere-pulse</p>
+                <p class="mb-1"><i class="fa-brands fa-linkedin mr-2"></i>SpherePulse</p>
+                <p class="mb-1"><i class="fa-brands fa-facebook mr-2"></i>Sphere_Pulse</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <p>&copy; SpherePulse 2023. All rights reserved</p>
+        </div>
+
+      </footer>
+
+      <script src="app.js"></script>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("Z7koYYBtXt0XNh0bK");
+            })();
+        </script>
+</body>
+</html>
