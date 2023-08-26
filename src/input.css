@@ -140,3 +140,7 @@ body {
     transition-delay: 400ms;
   }
 
+  #sent-message {
+    display: none;
+  }
+
