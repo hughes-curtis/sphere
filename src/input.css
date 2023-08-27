@@ -13,12 +13,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* @keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-} */
 
 @keyframes example {
     0%   {opacity: 0;}
@@ -40,7 +34,6 @@ body {
     border-radius: 20px;
     animation-name: example;
     animation-duration: 4s;
-    /* animation-iteration-count: infinite; */
   }
 
   #ai {
@@ -84,39 +77,6 @@ body {
     display: block;
   }
 
-  /*
-  
-  
-  
- 
-  
-  .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: left;
-  }
-  
-  
-  .contact-form textarea {
-    resize: vertical;
-  }
-  
-  .submit-button {
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: darkgreen;
-  } */ */
-
   .back {
     opacity: 0;
     filter: blur(5px);
@@ -137,23 +97,7 @@ body {
     }
   }
 
-  /* .logo:nth-child() {
-
-  } */
-
-  .logo {
-    transition-delay: 400ms;
-  }
-
   #sent-message {
     display: none;
   }
-
-  /* @media only screen and (max-width: 600px) {...} */
-
-  /* @media screen and (min-width: 768px) {
-    #backgroundVideo {
-      display: none;
-    }
-  } */
 
