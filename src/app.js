@@ -2,8 +2,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('front');
-        } else {
-            entry.target.classList.remove('front')
         }
     })
 })
@@ -27,6 +25,5 @@ contactBtn.addEventListener('click', (e) => {
         });
     contactForm.style.display = 'none';
     messageSpan.style.display = 'block';
-
-        
+     
 })
