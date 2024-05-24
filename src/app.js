@@ -17,7 +17,7 @@ const messageSpan = document.getElementById('sent-message');
 contactBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-        emailjs.sendForm('service_de3271b', 'template_qdgkji2', '#contact-form')
+        emailjs.sendForm('service_cbk4v7o', 'template_qdgkji2', '#contact-form')
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
