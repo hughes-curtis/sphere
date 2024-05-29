@@ -58,6 +58,10 @@ body {
     margin-bottom: 20px;
   }
 
+  h3 {
+    font-size: 28px;
+  }
+
   .contact p {
     font-size: 18px;
     line-height: 1.6;
@@ -99,4 +103,10 @@ body {
 
   #sent-message {
     display: none;
+  }
+
+  .image-width { 
+    height: 50px;
+    width: 80px;
+    
   }
