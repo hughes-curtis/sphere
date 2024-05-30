@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- <div id="index" class="h-screen"> -->
-    <div id="index" class="h-80 md:h-screen">
+    <div id="index" class="h-80 md:h-screen flex flex-col">
         <video autoplay muted loop class="top-0 fixed" id="backgroundVideo" poster="assets/images/loader.png">
             <source src="assets/videos/homefive.mp4" type="video/mp4">
         </video>
@@ -33,24 +33,49 @@
                 <p class="text-3xl font-extrabold">SpherePulse</p>
                 <p class="text-sm italic text-orange-200">English and Beyond</p>
             </div>
-            <div id="nav-items" class="hidden md:flex w-1/2 text-lg">
-                <a href="#stats" class="nav-link hover:text-green-600 duration-300 mr-3 hover:font-bold hover:underline hover:underline-offset-2">Services</a>
-                <a href="#services" class="nav-link hover:text-green-600 duration-30 mx-3 hover:font-bold hover:underline ">Our Work</a>
-                <a href="#about" class="nav-link hover:text-green-600 duration-300 mx-3 hover:font-bold hover:underline">About Us</a>
-                <a href="#contact" class="nav-link hover:text-green-600 duration-300 mx-3 hover:font-bold hover:underline">Contact</a>
+            <div id="nav-items" class="hidden md:flex w-1/2">
+                <a href="#stats" class="nav-link hover:text-green-600 duration-300 mr-3 hover:font-bold hover:underline px-3 py-1">Services</a>
+                <a href="#about" class="nav-link hover:text-green-600 duration-30 mx-3 hover:font-bold hover:underline px-3 py-1">About</a>
+                <!-- <a href="#contact" class="nav-link hover:text-green-600 duration-300 mr-3 hover:font-bold hover:underline px-3 py-1">Contact</a> -->
+                <a href="#contact" class="nav-link text-black bg-white hover:text-white hover:bg-black rounded-lg px-3 py-1 mr-3 font-extrabold">Contact</a>
+                <a href="#footer" class="nav-link text-white bg-orange-500 hover:text-white hover:bg-black rounded-lg px-3 py-1 font-extrabold">Careers</a>
+                
             </div>    
         </div>
         
         <div class="lg:w-1/2 md:h-full flex items-center mt-5 md:mt-0">
             <div id="homeText" class="text-white pl-5 py-3">
-                <p class="text-4xl mb-3">Empower Your <span id="ai" class="text-red-700 font-extrabold">AI</span> with Precision</p>
-                <p class="text-sm md:text-base md:w-3/4">Unlock Global Potential - Embracing Languages for a Truly Interconnected Globe.</p>      
+                <p class="text-4xl mb-3 font-bold">Empower Your <span id="ai" class="text-red-700 text-7xl font-extrabold">AI</span> with Precision</p>
+                <p class="text-sm md:text-base md:w-3/4 font-bold text-center">Unlock Global Potential - Embracing Languages for a Truly Interconnected Globe.</p>      
             </div>
         </div>
+        <!-- <div class="scroll-container pb-12 mb-14 w-full">
+            <div class="carousel-primary flex h-16 justify-between">
+                <img class="" src="assets/logos/centific.jpeg" alt="">
+                <img src="assets/logos/hesai.png" alt="">
+                <img src="assets/logos/mobvista.png" alt="">
+                <img src="assets/logos/oppo.png" alt="">
+                <img src="assets/logos/waymo.png" alt="">
+                <img src="assets/logos/weride.png" alt=""> 
+            </div> 
+        </div> -->
+        
+    </div>
+
+    <div class="scroll-container mt-20 pt-12 pb-12 w-full bg-white">
+        <div class="carousel-primary flex h-24 justify-between">
+            <img class="" src="assets/logos/centific.jpeg" alt="">
+            <img src="assets/logos/hesai.png" alt="">
+            <img src="assets/logos/mobvista.png" alt="">
+            <img src="assets/logos/oppo.png" alt="">
+            <img src="assets/logos/waymo.png" alt="">
+            <img src="assets/logos/weride.png" alt=""> 
+        </div> 
     </div>
     
 
-    <div id="about" class="bg-white text-slate-800 py-16 md:py-20 px-5">
+    <!-- <div id="about" class="bg-gradient-to-b from-gray-950 from-30% via-black via-60% to-gray-900 t0-10% text-white py-16 md:py-20 px-5"> -->
+    <div id="about" class="bg-white text-black py-16 md:py-20 px-5">
         <div class="flex flex-col-reverse md:flex-row">
             <div class="w-full md:w-1/2 pt-5 pr-5 flex flex-col justify-center">
                 <p class="mb-10 text-xl">
@@ -61,7 +86,10 @@
                 </p>
             </div>
             <div class="w-full md:w-1/2">
-                <img src="assets/images/four.jpg" alt="" class="rounded-3xl">
+                <!-- <img src="assets/images/four.jpg" alt="" class="rounded-3xl"> -->
+                <video autoplay muted loop class="rounded-3xl" id="salesVideo" poster="">
+                    <source src="assets/videos/sales.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
         <div class="flex flex-col md:flex-row pt-20">
@@ -78,8 +106,10 @@
             </div>
         </div>
     </div>
-    <div id="services" class="text-slate-800 bg-white pt-3 pb-28 px-5">
-        <h1 class="text-center text-4xl text-bold pb-10 font-serif">Our Services</h1>
+
+    <!-- <div id="services" class="text-slate-800 bg-white pt-20 pb-28 px-5"> -->
+        <div id="services" class="text-white bg-black pt-20 px-5">
+        <h2 class="text-center font-extrabold">What We Do.</h2>
         <div class="md:flex md:justify-between">
             <div class="mb-7 pb-8 rounded-xl shadow-xl hover:shadow-sm cursor-pointer shadow-slate-400">
                     <img src="assets/images/kid.jpg" alt="" class="rounded-xl" width="384" height="512">
@@ -99,78 +129,82 @@
             </div>
 
         </div>
+        </div>
 
 
 
 
-        <div class="mt-20">
-            <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-                <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="assets/images/three.jpg" alt="" width="384" height="512">
-                <div class="pt-6 md:p-8 text-center">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Working with SpherePulse has been a fantastic experience.
-                      They excel in timely delivery, clear communication, 
-                      and overall high-quality service.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">
-                      Project Manager
+        
+
+
+        <div class="bg-white pb-10 pt-10 px-5">
+            <div class="mt-10">
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="assets/images/three.jpg" alt="" width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center">
+                      <blockquote>
+                        <p class="text-lg font-medium">
+                          “Working with SpherePulse has been a fantastic experience.
+                          They excel in timely delivery, clear communication, 
+                          and overall high-quality service.”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400">
+                          Project Manager
+                        </div>
+                        <div class="text-slate-700 dark:text-slate-500">
+                          Bilibili Group
+                        </div>
+                      </figcaption>
                     </div>
-                    <div class="text-slate-700 dark:text-slate-500">
-                      Bilibili Group
+                  </figure> 
+            </div>
+
+            <div class="back mt-28 flex flex-col md:flex-row md:justify-between w-full">
+                <div class="py-3 md:mr-3 mb-7 px-5 md:w-1/2 bg-gradient-to-br from-slate-600 to-slate-900 text-white rounded-lg">
+                    <div class="flex flex-col items-center pb-2 text-2xl">
+                        <i class="fa-solid fa-registered pb-1"></i>
+                        <p class="">Grading</p>
                     </div>
-                  </figcaption>
+                    
+                    <p class="mb-3">Recognize the intention of users and evaluate the output produced by digital assistants.</p>
+                    <p class="">Examine the realm of user interaction and the technological proficiencies inherent in chatbots. Strive to remain at the forefront of dispensing a remarkable and favorable user experience, thereby ensuring a proactive approach in achieving excellence.</p>
+                    
                 </div>
-              </figure> 
-        </div>
-
-
-        <div class="back mt-28 flex flex-col md:flex-row md:justify-between w-full">
-            <div class="py-3 md:mr-3 mb-7 px-5 md:w-1/2 bg-gradient-to-br from-slate-600 to-slate-900 text-white rounded-lg">
-                <div class="flex flex-col items-center pb-2 text-2xl">
-                    <i class="fa-solid fa-registered pb-1"></i>
-                    <p class="">Grading</p>
+                <div class="py-3 md:ml-3 px-5 md:mb-7 md:w-1/2 bg-gradient-to-b from-orange-900 to-orange-600 text-white rounded-lg">
+                    <div class="flex flex-col items-center pb-2 text-2xl">
+                        <i class="fa-solid fa-umbrella pb-1"></i>
+                        <p>Data Collection</p>
+                    </div>
+        
+                    <p class="mb-3">Accumulate extensive quantities of data, spanning a wide spectrum of multimedia forms including photographs, videos, and audio recordings.</p>
+                    <p class="pb-10">We can subsequently annotate, transcribe, or translate these with remarkable precision.</p>
                 </div>
-                
-                <p class="mb-3">Recognize the intention of users and evaluate the output produced by digital assistants.</p>
-                <p class="">Examine the realm of user interaction and the technological proficiencies inherent in chatbots. Strive to remain at the forefront of dispensing a remarkable and favorable user experience, thereby ensuring a proactive approach in achieving excellence.</p>
-                
             </div>
-            <div class="py-3 md:ml-3 px-5 md:mb-7 md:w-1/2 bg-gradient-to-b from-orange-900 to-orange-600 text-white rounded-lg">
-                <div class="flex flex-col items-center pb-2 text-2xl">
-                    <i class="fa-solid fa-umbrella pb-1"></i>
-                    <p>Data Collection</p>
+            <div class="back mt-7 md:mt-16 flex flex-col md:flex-row justify-between w-full">
+                <div class="py-3 md:mr-3 px-5 mb-7 md:w-1/2 bg-gradient-to-r from-green-900 to-green-600 text-white rounded-lg">
+                    <div class="flex flex-col items-center pb-2 text-2xl">
+                        <i class="fa-solid fa-compact-disc pb-1"></i>
+                        <p>Corpus Creation</p>
+                    </div>
+                    
+                    <p class="mb-3">Valuable experience in corpus creation.</p>
+                    <p class="mb-3">Skillfully curating and compiling comprehensive collections of texts or data, which serve as essential references for various language processing tasks.</p>
+                    <p class="pb-10">Through meticulous attention to detail and a keen understanding of linguistic nuances, we’ve contributed to the development of high-quality corpora that facilitate the advancement of language technologies and natural language understanding.</p>
                 </div>
-    
-                <p class="mb-3">Accumulate extensive quantities of data, spanning a wide spectrum of multimedia forms including photographs, videos, and audio recordings.</p>
-                <p class="pb-10">We can subsequently annotate, transcribe, or translate these with remarkable precision.</p>
-            </div>
-        </div>
-        <div class="back mt-7 md:mt-16 flex flex-col md:flex-row justify-between w-full">
-            <div class="py-3 md:mr-3 px-5 mb-7 md:w-1/2 bg-gradient-to-r from-green-900 to-green-600 text-white rounded-lg">
-                <div class="flex flex-col items-center pb-2 text-2xl">
-                    <i class="fa-solid fa-compact-disc pb-1"></i>
-                    <p>Corpus Creation</p>
+                <div class="py-3 md:ml-3 px-5 md:mb-7 md:w-1/2 bg-slate-700 text-white rounded-lg">
+                    <div class="flex flex-col items-center pb-2 text-2xl">
+                        <i class="fa-solid fa-headset pb-1"></i>
+                        <p>Bot Response</p>
+                    </div>
+                   
+                    <p class=" mb-3">Data to help models develop an understanding of human language patterns, context, and nuances.</p>
+                    <p class="">This intricate training process empowers message bot AIs to provide helpful, contextually accurate, harmless, and coherent responses across a wide array of user queries and prompts spanning finance, legal, health, creative writing, STEM, and coding domains.</p>
+                    
                 </div>
-                
-                <p class="mb-3">Valuable experience in corpus creation.</p>
-                <p class="mb-3">Skillfully curating and compiling comprehensive collections of texts or data, which serve as essential references for various language processing tasks.</p>
-                <p class="pb-10">Through meticulous attention to detail and a keen understanding of linguistic nuances, we’ve contributed to the development of high-quality corpora that facilitate the advancement of language technologies and natural language understanding.</p>
-            </div>
-            <div class="py-3 md:ml-3 px-5 md:mb-7 md:w-1/2 bg-slate-700 text-white rounded-lg">
-                <div class="flex flex-col items-center pb-2 text-2xl">
-                    <i class="fa-solid fa-headset pb-1"></i>
-                    <p>Bot Response</p>
-                </div>
-               
-                <p class=" mb-3">Data to help models develop an understanding of human language patterns, context, and nuances.</p>
-                <p class="">This intricate training process empowers message bot AIs to provide helpful, contextually accurate, harmless, and coherent responses across a wide array of user queries and prompts spanning finance, legal, health, creative writing, STEM, and coding domains.</p>
-                
             </div>
         </div>
-    </div>
 
 
 
@@ -225,7 +259,7 @@
         </div>
       </section>
 
-      <footer class="text-white px-5 pt-14 pb-8 text-sm">
+      <footer id="footer" class="text-white px-5 pt-14 pb-8 text-sm">
         <div class="flex flex-col md:flex-row justify-around mb-5">
             <div class="w-full md:w-1/4 md:flex md:flex-col md:justify-center md:items-center">
                 <p class="text-lg mb-3">ABOUT</p>

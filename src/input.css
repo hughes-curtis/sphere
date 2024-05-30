@@ -58,6 +58,11 @@ body {
     margin-bottom: 20px;
   }
 
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
   h3 {
     font-size: 28px;
   }
@@ -108,5 +113,35 @@ body {
   .image-width { 
     height: 50px;
     width: 80px;
+  }
+
+  .carousel-primary,
+  .carousel-secondary {
     
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .carousel-primary img {
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 14px;
+  }
+
+  .carousel-primary {
+    animation: scroll-horizontal 3s linear infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      left: 0%;
+    }
+
+    100% {
+      left: -2%;
+    }
   }
