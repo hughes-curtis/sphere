@@ -23,7 +23,8 @@
 </head>
 <body>
     <!-- <div id="index" class="h-screen"> -->
-    <div id="index" class="h-80 md:h-screen flex flex-col">
+    <!-- <div id="index" class="h-80 md:h-screen flex flex-col"> -->
+    <div id="index" class="h-auto flex flex-col mx-5">
         <video autoplay muted loop class="top-0 fixed" id="backgroundVideo" poster="assets/images/loader.png">
             <source src="assets/videos/homefive.mp4" type="video/mp4">
         </video>
@@ -32,6 +33,12 @@
             <div class="flex flex-col items-center">
                 <p class="text-3xl font-extrabold">SpherePulse</p>
                 <p class="text-sm italic text-orange-200">English and Beyond</p>
+            </div>
+            <div class="text-2xl text-orange-500 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
             </div>
             <div id="nav-items" class="hidden md:flex w-1/2">
                 <a href="#stats" class="nav-link hover:text-green-600 duration-300 mr-3 hover:font-bold hover:underline px-3 py-1">Services</a>
@@ -43,23 +50,17 @@
             </div>    
         </div>
         
-        <div class="lg:w-1/2 md:h-full flex items-center mt-5 md:mt-0">
-            <div id="homeText" class="text-white pl-5 py-3">
-                <p class="text-4xl mb-3 font-bold">Empower Your <span id="ai" class="text-red-700 text-7xl font-extrabold">AI</span> with Precision</p>
-                <p class="text-sm md:text-base md:w-3/4 font-bold text-center">Unlock Global Potential - Embracing Languages for a Truly Interconnected Globe.</p>      
+        <!-- <div class="lg:w-1/2 md:h-full flex items-center mt-5 md:mt-0"> -->
+        <div class="lg:w-1/2 md:h-full flex items-center flex-col mt-28 md:mt-0">
+            <div id="homeText" class="text-white text-center pl-5 py-3">
+                <p class="text-6xl md:text-4xl mb-3 font-bold">Empower Your <span id="ai" class="text-red-700 md:text-7xl font-extrabold">AI</span> with Precision</p>
+                <p class="text-lg mt-10 md:w-3/4 font-bold text-center">Unlock Global Potential - Embracing Languages for a Truly Interconnected Globe.</p>      
+            </div>
+            <div class="mt-16 md:hidden">
+                <button class="text-black bg-white px-7 py-2 mr-4 rounded-lg text-2xl font-extrabold">Contact Us</button>
+                <button class="text-white bg-orange-500 px-7 py-2 rounded-lg text-2xl font-extrabold">Join Us</button>
             </div>
         </div>
-        <!-- <div class="scroll-container pb-12 mb-14 w-full">
-            <div class="carousel-primary flex h-16 justify-between">
-                <img class="" src="assets/logos/centific.jpeg" alt="">
-                <img src="assets/logos/hesai.png" alt="">
-                <img src="assets/logos/mobvista.png" alt="">
-                <img src="assets/logos/oppo.png" alt="">
-                <img src="assets/logos/waymo.png" alt="">
-                <img src="assets/logos/weride.png" alt=""> 
-            </div> 
-        </div> -->
-        
     </div>
 
     <div class="scroll-container mt-20 pt-12 pb-12 w-full bg-white">
